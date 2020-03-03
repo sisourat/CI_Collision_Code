@@ -1,0 +1,9 @@
+     <GetStaInput>
+
+     <Center>
+     <Position  x=' 0.0000000' y=' 0.0000000' z=' 0.00000' />
+     <Basisset file='/public/home/ch190732/multi/getsta-ints-code-opt/basis-he ' />
+     <Potential charge=' 2.0d0' exponent=' 0.0000000' />
+     </Center>   
+  
+     </GetStaInput>

@@ -1,0 +1,64 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 77.62     23.13    23.13                             computemat_tt_mp_computestamat_tt_
+ 11.29     26.50     3.37                             repulsion_mod_mp_repulsion_
+  2.42     27.22     0.72                             MAIN__
+  2.18     27.87     0.65                             diagolib_mp_jacobi_
+  1.58     28.34     0.47                             matrep_mp_sumfkhk_
+  0.74     28.56     0.22                             for__interp_fmt
+  0.67     28.76     0.20                             diagolib_mp_mulmat_
+  0.57     28.93     0.17                             __intel_avx_rep_memset
+  0.52     29.08     0.16                             for_write_seq_fmt_xmit
+  0.34     29.18     0.10                             for__format_value
+  0.27     29.26     0.08                             for__desc_ret_item
+  0.23     29.33     0.07                             cvt_integer_to_text
+  0.20     29.39     0.06                             cvtas_t_to_a
+  0.20     29.45     0.06                             diagolib_mp_eig_
+  0.18     29.51     0.06                             repulsion_mod_mp_repulsion_driver_
+  0.17     29.56     0.05                             cvt_ieee_t_to_text_ex
+  0.13     29.60     0.04                             __intel_avx_rep_memcpy
+  0.13     29.64     0.04                             for__release_lun
+  0.12     29.67     0.04                             for_write_seq_fmt
+  0.10     29.70     0.03                             _intel_fast_memcmp
+  0.07     29.72     0.02                             for__acquire_lun
+  0.07     29.74     0.02                             for__acquire_semaphore_threaded
+  0.07     29.76     0.02                             for_index_ssll
+  0.07     29.78     0.02                             matrep_mp_stamatrep_
+  0.03     29.79     0.01                             _intel_fast_memset.Z
+  0.03     29.80     0.01                             to_int16
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

@@ -1,0 +1,17 @@
+ # Output files in he_sta
+ # he_sta replaced!
+ # Move to 
+ /public/home/ch190732/multi/getsta-ints-code-opt/he_sta                        
+                                                                                
+                                           
+  # Read Basis set in
+ /public/home/ch190732/multi/getsta-ints-code-opt/aobasis1.bas                  
+                                                                                
+                                           
+           4 ! s functions&found
+           2 ! p functions&found
+           2 ! d functions&found
+           2 ! f functions&found
+           2 ! g functions&found
+ ! h functions& not found
+ ! i functions& not found

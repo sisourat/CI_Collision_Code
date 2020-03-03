@@ -1,0 +1,9 @@
+     <GetStaInput>
+
+     <Center>
+     <Position  x=' 0.0000000' y=' 0.0000000' z=' 0.00000' />
+     <Basisset file='/Users/gjw/code/test-2020/getsta-ints-code-opt/apbas' />
+     <Potential charge=' -1.0d0' exponent=' 0.0000000' />
+     </Center>   
+  
+     </GetStaInput>
