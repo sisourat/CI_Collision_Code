@@ -1,0 +1,38 @@
+ $CONTRL SCFTYP=RHF ICHARG=0 ISPHER=-1
+  QMTTOL=1.E-19 MAXIT=100        $END
+ $SCF CONV=1.E-4  $END
+ $GUESS GUESS=HCORE $END
+
+ $CONTRL MULT=1 RUNTYP=ENERGY NPRINT=2 $END
+
+ $SYSTEM TIMLIM=525600 MEMORY=52004268 $END
+ $INTGRL NINTMX=50000 NDAR=100000            $END
+ $SYSTEM TIMLIM=9999 MEMORY=600000000        $END
+ $CONTRL INTTYP=HONDO ICUT=40 ITOL=40        $END
+
+CONTRL EXETYP=RUN MULT=2 RUNTYP=ENERGY  $END
+ $CONTRL EXETYP=RUN MULT=1 RUNTYP=ENERGY  CCTYP=CCSD $END
+ $CCINP NCORE=0 NFZV=0 MAXCC=1 $END
+
+
+ $DATA                                                                          
+ RHF/6-31G(d) H2                                                                 
+ CN 1
+                                                                                 
+ HYDROGEN    1.0    .0000000000    .0000000000    0.0
+S   1
+  1     100.00000000  1.0
+S   1
+  1    10.0  1.0
+S   1
+  1     1.0  1.0
+
+ HYDROGEN    1.0    .0000000000    .0000000000    0.74
+S   1
+  1     100.00000000  1.0
+S   1
+  1     10.00000007  1.0
+S   1
+  1     1.0  1.0
+
+ $END                                                               

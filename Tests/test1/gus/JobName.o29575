@@ -1,0 +1,29 @@
+------------------------------------------------------
+Job is running on node node05
+------------------------------------------------------
+PBS: qsub is running on mendeleiev
+PBS: originating queue is batch
+PBS: executing queue is batch
+PBS: working directory is /home/nicolas/progs/Collision_code_05022020/Tests/test1/gus
+PBS: execution mode is PBS_BATCH
+PBS: job identifier is 29575.mendeleiev
+PBS: job name is JobName
+PBS: node file is /var/spool/torque/aux//29575.mendeleiev
+PBS: current home directory is /home/nicolas
+PBS: PATH = /opt/intel/compilers_and_libraries_2017.1.132/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.1.132/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/intel/compilers_and_libraries_2017.1.132/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.1.132/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+------------------------------------------------------
+server is mendeleiev
+workdir is /home/scratch/PBS_29575.mendeleiev
+permdir is /home/nicolas/progs/Collision_code_05022020/Tests/test1/gus
+servpermdir is mendeleiev:/home/nicolas/progs/Collision_code_05022020/Tests/test1/gus
+------------------------------------------------------
+Job is running on node node05
+------------------------------------------------------
+ 
+ 
+ 
+Transferring files from server to compute node
+Writing files in node directory /home/scratch/PBS_29575.mendeleiev
+ 
+Transferring files from compute nodes to server
+Writing files in permanent directory /home/nicolas/progs/Collision_code_05022020/Tests/test1/gus

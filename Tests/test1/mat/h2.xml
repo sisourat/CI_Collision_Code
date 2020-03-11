@@ -1,0 +1,15 @@
+<GetStaInput>
+ 
+  <Center>
+     <Position  x='0.0000000000' y='0.0000000000' z='0.0000000000' />
+     <Basisset file='/home/nicolas/progs/Collision_code_05022020/Tests/test1/mat/aobasis1.bas' />
+     <Potential charge='1.0' exponent='0.0' />
+  </Center>
+ 
+  <Center>
+     <Position  x='0.0000000000' y='0.0000000000' z='1.3983972309' />
+     <Basisset file='/home/nicolas/progs/Collision_code_05022020/Tests/test1/mat/aobasis2.bas' />
+     <Potential charge='1.0' exponent='0.0' />
+  </Center>
+ 
+</GetStaInput>

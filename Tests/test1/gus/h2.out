@@ -1,0 +1,573 @@
+----- GAMESS execution script 'rungms' -----
+This job is running on host node05
+under operating system Linux at Wed Mar 11 14:38:27 CET 2020
+PBS has assigned the following compute nodes to this run:
+node05
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem               1K-blocks  Used  Available Use% Mounted on
+/dev/mapper/centos-home 1894166888 39448 1894127440   1% /home
+GAMESS temporary binary files will be written to /home/scratch/PBS_29575.mendeleiev/scr
+GAMESS supplementary output files will be written to /home/scratch/PBS_29575.mendeleiev/scr
+Copying input file h2.inp to your run's scratch directory...
+
+ Distributed Data Interface kickoff program.
+ Initiating 1 compute processes on 1 nodes to run the following command:
+ /mnt/nfs/home/common/gamess//gamess.nico.x h2 
+
+          ******************************************************
+          *         GAMESS VERSION =  5 DEC 2014 (R1)          *
+          *             FROM IOWA STATE UNIVERSITY             *
+          * M.W.SCHMIDT, K.K.BALDRIDGE, J.A.BOATZ, S.T.ELBERT, *
+          *   M.S.GORDON, J.H.JENSEN, S.KOSEKI, N.MATSUNAGA,   *
+          *          K.A.NGUYEN, S.J.SU, T.L.WINDUS,           *
+          *       TOGETHER WITH M.DUPUIS, J.A.MONTGOMERY       *
+          *         J.COMPUT.CHEM.  14, 1347-1363(1993)        *
+          **************** 64 BIT INTEL VERSION ****************
+
+  SINCE 1993, STUDENTS AND POSTDOCS WORKING AT IOWA STATE UNIVERSITY
+  AND ALSO IN THEIR VARIOUS JOBS AFTER LEAVING ISU HAVE MADE IMPORTANT
+  CONTRIBUTIONS TO THE CODE:
+     IVANA ADAMOVIC, CHRISTINE AIKENS, YURI ALEXEEV, POOJA ARORA,
+     ANDREY ASADCHEV, ROB BELL, PRADIPTA BANDYOPADHYAY, JONATHAN BENTZ,
+     BRETT BODE, KURT BRORSEN, CALEB CARLIN, GALINA CHABAN, WEI CHEN,
+     CHEOL HO CHOI, PAUL DAY, ALBERT DEFUSCO, NUWAN DESILVA, TIM DUDLEY,
+     DMITRI FEDOROV, GRAHAM FLETCHER, MARK FREITAG, KURT GLAESEMANN,
+     DAN KEMP, GRANT MERRILL, NORIYUKI MINEZAWA, JONATHAN MULLIN,
+     TAKESHI NAGATA, SEAN NEDD, HEATHER NETZLOFF, BOSILJKA NJEGIC, RYAN OLSON,
+     MIKE PAK, SPENCER PRUITT, LUKE ROSKOP, JIM SHOEMAKER, LYUDMILA SLIPCHENKO,
+     TONY SMITH, SAROM SOK, JIE SONG, TETSUYA TAKETSUGU, SIMON WEBB,
+     PENG XU, SOOHAENG YOO, FEDERICO ZAHARIEV
+
+  ADDITIONAL CODE HAS BEEN PROVIDED BY COLLABORATORS IN OTHER GROUPS:
+     IOWA STATE UNIVERSITY:
+          JOE IVANIC, AARON WEST, LAIMUTIS BYTAUTAS, KLAUS RUEDENBERG
+     UNIVERSITY OF TOKYO: KIMIHIKO HIRAO, TAKAHITO NAKAJIMA,
+          TAKAO TSUNEDA, MUNEAKI KAMIYA, SUSUMU YANAGISAWA,
+          KIYOSHI YAGI, MAHITO CHIBA, SEIKEN TOKURA, NAOAKI KAWAKAMI
+     UNIVERSITY OF AARHUS: FRANK JENSEN
+     UNIVERSITY OF IOWA: VISVALDAS KAIRYS, HUI LI
+     NATIONAL INST. OF STANDARDS AND TECHNOLOGY: WALT STEVENS, DAVID GARMER
+     UNIVERSITY OF PISA: BENEDETTA MENNUCCI, JACOPO TOMASI
+     UNIVERSITY OF MEMPHIS: HENRY KURTZ, PRAKASHAN KORAMBATH
+     UNIVERSITY OF ALBERTA: TOBY ZENG, MARIUSZ KLOBUKOWSKI
+     UNIVERSITY OF NEW ENGLAND: MARK SPACKMAN
+     MIE UNIVERSITY: HIROAKI UMEDA
+     NAT. INST. OF ADVANCED INDUSTRIAL SCIENCE AND TECHNOLOGY: KAZUO KITAURA
+     MICHIGAN STATE UNIVERSITY:
+          KAROL KOWALSKI, MARTA WLOCH, JEFFREY GOUR, JESSE LUTZ,
+          WEI LI, PIOTR PIECUCH
+     UNIVERSITY OF SILESIA: MONIKA MUSIAL, STANISLAW KUCHARSKI
+     FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX:
+          OLIVIER QUINET, BENOIT CHAMPAGNE
+     UNIVERSITY OF CALIFORNIA - SANTA BARBARA: BERNARD KIRTMAN
+     INSTITUTE FOR MOLECULAR SCIENCE:
+          KAZUYA ISHIMURA, MICHIO KATOUDA, AND SHIGERU NAGASE
+     UNIVERSITY OF NOTRE DAME: ANNA POMOGAEVA, DAN CHIPMAN
+     KYUSHU UNIVERSITY:
+          HARUYUKI NAKANO,
+          FENG LONG GU, JACEK KORCHOWIEC, MARCIN MAKOWSKI, AND YURIKO AOKI,
+          HIROTOSHI MORI AND EISAKU MIYOSHI
+     PENNSYLVANIA STATE UNIVERSITY:
+          TZVETELIN IORDANOV, CHET SWALINA, JONATHAN SKONE,
+          SHARON HAMMES-SCHIFFER
+     WASEDA UNIVERSITY:
+          MASATO KOBAYASHI, TOMOKO AKAMA, TSUGUKI TOUMA,
+          TAKESHI YOSHIKAWA, YASUHIRO IKABATA, HIROMI NAKAI
+     NANJING UNIVERSITY: SHUHUA LI
+     UNIVERSITY OF NEBRASKA:
+          PEIFENG SU, DEJUN SI, NANDUN THELLAMUREGE, YALI WANG, HUI LI
+     UNIVERSITY OF ZURICH: ROBERTO PEVERATI, KIM BALDRIDGE
+     N. COPERNICUS UNIVERSITY AND JACKSON STATE UNIVERSITY:
+          MARIA BARYSZ
+     UNIVERSITY OF COPENHAGEN: CASPER STEINMANN
+     TOKYO INSTITUTE OF TECHNOLOGY: HIROYA NAKATA
+     NAGOYA UNIVERSITY: YOSHIO NISHIMOTO, STEPHAN IRLE
+
+ EXECUTION OF GAMESS BEGUN Wed Mar 11 14:38:27 2020
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD> $CONTRL SCFTYP=RHF ICHARG=0 ISPHER=-1                                          
+ INPUT CARD>  QMTTOL=1.E-19 MAXIT=100        $END                                           
+ INPUT CARD> $SCF CONV=1.E-4  $END                                                          
+ INPUT CARD> $GUESS GUESS=HCORE $END                                                        
+ INPUT CARD>                                                                                
+ INPUT CARD> $CONTRL MULT=1 RUNTYP=ENERGY NPRINT=2 $END                                     
+ INPUT CARD>                                                                                
+ INPUT CARD> $SYSTEM TIMLIM=525600 MEMORY=52004268 $END                                     
+ INPUT CARD> $INTGRL NINTMX=50000 NDAR=100000            $END                               
+ INPUT CARD> $SYSTEM TIMLIM=9999 MEMORY=600000000        $END                               
+ INPUT CARD> $CONTRL INTTYP=HONDO ICUT=40 ITOL=40        $END                               
+ INPUT CARD>                                                                                
+ INPUT CARD>CONTRL EXETYP=RUN MULT=2 RUNTYP=ENERGY  $END                                    
+ INPUT CARD> $CONTRL EXETYP=RUN MULT=1 RUNTYP=ENERGY  CCTYP=CCSD $END                       
+ INPUT CARD> $CCINP NCORE=0 NFZV=0 MAXCC=1 $END                                             
+ INPUT CARD>                                                                                
+ INPUT CARD>                                                                                
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD> RHF/6-31G(d) H2                                                                
+ INPUT CARD> CN 1                                                                           
+ INPUT CARD>                                                                                
+ INPUT CARD> HYDROGEN    1.0    .0000000000    .0000000000    0.0                           
+ INPUT CARD>S   1                                                                           
+ INPUT CARD>  1     100.00000000  1.0                                                       
+ INPUT CARD>S   1                                                                           
+ INPUT CARD>  1    10.0  1.0                                                                
+ INPUT CARD>S   1                                                                           
+ INPUT CARD>  1     1.0  1.0                                                                
+ INPUT CARD>                                                                                
+ INPUT CARD> HYDROGEN    1.0    .0000000000    .0000000000    0.74                          
+ INPUT CARD>S   1                                                                           
+ INPUT CARD>  1     100.00000000  1.0                                                       
+ INPUT CARD>S   1                                                                           
+ INPUT CARD>  1     10.00000007  1.0                                                        
+ INPUT CARD>S   1                                                                           
+ INPUT CARD>  1     1.0  1.0                                                                
+ INPUT CARD>                                                                                
+ INPUT CARD> $END                                                                           
+  600000000 WORDS OF MEMORY AVAILABLE
+
+
+     RUN TITLE
+     ---------
+  RHF/6-31G(d) H2                                                                
+
+ THE POINT GROUP OF THE MOLECULE IS CN      
+ THE ORDER OF THE PRINCIPAL AXIS IS     1
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ HYDROGEN    1.0     0.0000000000        0.0000000000        0.0000000000
+ HYDROGEN    1.0     0.0000000000        0.0000000000        1.3983972309
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 HYDR       2 HYDR  
+
+   1 HYDR    0.0000000    0.7400000 *
+   2 HYDR    0.7400000 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+     ATOMIC BASIS SET
+     ----------------
+ THE CONTRACTED PRIMITIVE FUNCTIONS HAVE BEEN UNNORMALIZED
+ THE CONTRACTED BASIS FUNCTIONS ARE NOW NORMALIZED TO UNITY
+
+  SHELL TYPE  PRIMITIVE        EXPONENT          CONTRACTION COEFFICIENT(S)
+
+ HYDROGEN  
+
+      1   S       1           100.0000000    1.000000000000
+
+      2   S       2            10.0000000    1.000000000000
+
+      3   S       3             1.0000000    1.000000000000
+
+ HYDROGEN  
+
+      4   S       4           100.0000000    1.000000000000
+
+      5   S       5            10.0000001    1.000000000000
+
+      6   S       6             1.0000000    1.000000000000
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =    6
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =    6
+ NUMBER OF ELECTRONS                          =    2
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    1
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =    1
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =    1
+ TOTAL NUMBER OF ATOMS                        =    2
+ THE NUCLEAR REPULSION ENERGY IS        0.7151043909
+
+ THIS MOLECULE IS RECOGNIZED AS BEING LINEAR,
+ ORBITAL LZ DEGENERACY TOLERANCE ETOLLZ= 1.00E-06
+
+     $CONTRL OPTIONS
+     ---------------
+ SCFTYP=RHF          RUNTYP=ENERGY       EXETYP=RUN     
+ MPLEVL=       0     CITYP =NONE         CCTYP =CCSD         VBTYP =NONE    
+ DFTTYP=NONE         TDDFT =NONE    
+ MULT  =       1     ICHARG=       0     NZVAR =       0     COORD =UNIQUE  
+ PP    =NONE         RELWFN=NONE         LOCAL =NONE         NUMGRD=       F
+ ISPHER=      -1     NOSYM =       0     MAXIT =     100     UNITS =ANGS    
+ PLTORB=       F     MOLPLT=       F     AIMPAC=       F     FRIEND=        
+ NPRINT=       2     IREST =       0     GEOM  =INPUT   
+ NORMF =       0     NORMP =       0     ITOL  =      40     ICUT  =      40
+ INTTYP=BEST         GRDTYP=BEST         QMTTOL= 1.0E-19
+
+     $SYSTEM OPTIONS
+     ---------------
+  REPLICATED MEMORY=   600000000 WORDS (ON EVERY NODE).
+ DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
+ MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ TOTAL MEMORY REQUESTED ON EACH PROCESSOR=   600000000 WORDS.
+ TIMLIM=        9999.00 MINUTES, OR       6.9 DAYS.
+ PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ MXSEQ2=     300 MXSEQ3=     150  mem10=         0
+
+          ----------------
+          PROPERTIES INPUT
+          ----------------
+
+     MOMENTS            FIELD           POTENTIAL          DENSITY
+ IEMOM =       1   IEFLD =       0   IEPOT =       0   IEDEN =       0
+ WHERE =COMASS     WHERE =NUCLEI     WHERE =NUCLEI     WHERE =NUCLEI  
+ OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH    
+ IEMINT=       0   IEFINT=       0                     IEDINT=       0
+                                                       MORB  =       0
+          EXTRAPOLATION IN EFFECT
+ ORBITAL PRINTING OPTION: NPREO=     1     6     2     1
+
+     -------------------------------
+     INTEGRAL TRANSFORMATION OPTIONS
+     -------------------------------
+     NWORD  =            0
+     CUTOFF = 1.0E-09     MPTRAN =       0
+     DIRTRF =       F     AOINTS =DUP     
+
+          ----------------------
+          INTEGRAL INPUT OPTIONS
+          ----------------------
+ NOPK  =       1 NORDER=       0 SCHWRZ=       F
+
+     ------------------------------------------
+     THE POINT GROUP IS CN , NAXIS= 1, ORDER= 1
+     ------------------------------------------
+
+     DIMENSIONS OF THE SYMMETRY SUBSPACES ARE
+ A   =    6
+
+ ..... DONE SETTING UP THE RUN .....
+ STEP CPU TIME =     0.02 TOTAL CPU TIME =        0.0 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.1 SECONDS, CPU UTILIZATION IS  25.00%
+
+          ********************
+          1 ELECTRON INTEGRALS
+          ********************
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =        0.0 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.1 SECONDS, CPU UTILIZATION IS  13.33%
+
+          -------------
+          GUESS OPTIONS
+          -------------
+          GUESS =HCORE             NORB  =       0          NORDER=       0
+          MIX   =       F          PRTMO =       F          PUNMO =       F
+          TOLZ  = 1.0E-08          TOLE  = 1.0E-05
+          SYMDEN=       F          PURIFY=       F
+
+ INITIAL GUESS ORBITALS GENERATED BY HCORE    ROUTINE.
+
+ SYMMETRIES FOR INITIAL GUESS ORBITALS FOLLOW.   BOTH SET(S).
+     1 ORBITALS ARE OCCUPIED (    0 CORE ORBITALS).
+     1=A        2=A        3=A        4=A        5=A        6=A   
+
+                              ----------------------
+                              INITIAL GUESS ORBITALS
+                              ----------------------
+
+                              ASSIGNED OCCUPANCIES
+
+                  2.000000   0.000000   0.000000   0.000000   0.000000
+                  0.000000
+
+                      1          2          3          4          5
+                    0.0000     0.0000     0.0000     0.0000     0.0000
+                     A          A          A          A          A   
+    1  H  1  S    0.002239  -0.002681  -0.013093   0.013624   0.792070
+    2  H  1  S    0.029264  -0.029067   0.790782  -0.801850  -0.376297
+    3  H  1  S    0.591315  -0.877391  -0.315188   0.498148   0.079239
+    4  H  2  S    0.002239   0.002681  -0.013093  -0.013624   0.792067
+    5  H  2  S    0.029264   0.029067   0.790781   0.801851  -0.376295
+    6  H  2  S    0.591315   0.877391  -0.315188  -0.498148   0.079239
+
+                      6
+                    0.0000
+                     A   
+    1  H  1  S   -0.792387
+    2  H  1  S    0.380017
+    3  H  1  S   -0.121293
+    4  H  2  S    0.792390
+    5  H  2  S   -0.380018
+    6  H  2  S    0.121293
+ ...... END OF INITIAL ORBITAL SELECTION ......
+ STEP CPU TIME =     0.02 TOTAL CPU TIME =        0.0 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.2 SECONDS, CPU UTILIZATION IS  18.18%
+
+                    ----------------------
+                    AO INTEGRAL TECHNOLOGY
+                    ----------------------
+     S,P,L SHELL ROTATED AXIS INTEGRALS, REPROGRAMMED BY
+        KAZUYA ISHIMURA (IMS) AND JOSE SIERRA (SYNSTAR).
+     S,P,D,L SHELL ROTATED AXIS INTEGRALS PROGRAMMED BY
+        KAZUYA ISHIMURA (INSTITUTE FOR MOLECULAR SCIENCE).
+     S,P,D,F,G SHELL TO TOTAL QUARTET ANGULAR MOMENTUM SUM 5,
+        ERIC PROGRAM BY GRAHAM FLETCHER (ELORET AND NASA ADVANCED
+        SUPERCOMPUTING DIVISION, AMES RESEARCH CENTER).
+     S,P,D,F,G,L SHELL GENERAL RYS QUADRATURE PROGRAMMED BY
+        MICHEL DUPUIS (PACIFIC NORTHWEST NATIONAL LABORATORY).
+
+          --------------------
+          2 ELECTRON INTEGRALS
+          --------------------
+
+ THE -PK- OPTION IS OFF, THE INTEGRALS ARE NOT IN SUPERMATRIX FORM.
+ STORING   50000 INTEGRALS/RECORD ON DISK, USING 12 BYTES/INTEGRAL.
+ TWO ELECTRON INTEGRAL EVALUATION REQUIRES  194377 WORDS OF MEMORY.
+ II,JST,KST,LST =  1  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  2  1  1  1 NREC =         1 INTLOC =    2
+ II,JST,KST,LST =  3  1  1  1 NREC =         1 INTLOC =    7
+ II,JST,KST,LST =  4  1  1  1 NREC =         1 INTLOC =   22
+ II,JST,KST,LST =  5  1  1  1 NREC =         1 INTLOC =   46
+ II,JST,KST,LST =  6  1  1  1 NREC =         1 INTLOC =  106
+ TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 210
+          1 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
+  ...... END OF TWO-ELECTRON INTEGRALS .....
+ STEP CPU TIME =     0.01 TOTAL CPU TIME =        0.1 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.3 SECONDS, CPU UTILIZATION IS  14.29%
+
+          --------------------------
+                 RHF SCF CALCULATION
+          --------------------------
+
+     NUCLEAR ENERGY =         0.7151043909
+     MAXIT =  100     NPUNCH=    2
+     EXTRAP=T  DAMP=F  SHIFT=F  RSTRCT=F  DIIS=F  DEM=F  SOSCF=F
+     DENSITY MATRIX CONV=  1.00E-04
+     MEMORY REQUIRED FOR RHF ITERS=    100336 WORDS.
+
+ ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR
+   1  0  0       -0.5665267591    -0.5665267591   0.005998654   0.000000000
+   2  1  0       -0.5678003106    -0.0012735515   0.000321539   0.000000000
+   3  2  0       -0.5678039946    -0.0000036840   0.000017356   0.000000000
+   4  3  0       -0.5678040054    -0.0000000108   0.000000938   0.000000000
+
+ RHF HAS CONVERGED, NOW COMPUTING EXACT TOTAL FOCK MATRIX
+ FOR USE DURING THE COUPLED CLUSTER CALCULATION THAT FOLLOWS.
+
+          -----------------
+          DENSITY CONVERGED
+          -----------------
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
+     TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
+
+ FINAL RHF ENERGY IS       -0.5678040054 AFTER   4 ITERATIONS
+
+ LZ VALUE ANALYSIS FOR THE MOS
+ ----------------------------------------
+ MO     1 (    1) HAS LZ(WEIGHT)= 0.00(100.0%) 
+ MO     2 (    2) HAS LZ(WEIGHT)= 0.00(100.0%) 
+ MO     3 (    3) HAS LZ(WEIGHT)= 0.00(100.0%) 
+ MO     4 (    4) HAS LZ(WEIGHT)= 0.00(100.0%) 
+ MO     5 (    5) HAS LZ(WEIGHT)= 0.00(100.0%) 
+ MO     6 (    6) HAS LZ(WEIGHT)= 0.00(100.0%) 
+
+          ------------
+          EIGENVECTORS
+          ------------
+
+                      1          2          3          4          5
+                   -0.1628     1.3073    14.2298    14.2996   164.4785
+                     A          A          A          A          A   
+    1  H  1  S    0.002406   0.003053  -0.013386   0.013927   0.792064
+    2  H  1  S    0.023817   0.017129   0.791110  -0.802357  -0.375991
+    3  H  1  S    0.593464   0.884685  -0.311168   0.485177   0.079060
+    4  H  2  S    0.002406  -0.003053  -0.013386  -0.013927   0.792062
+    5  H  2  S    0.023817  -0.017129   0.791109   0.802358  -0.375989
+    6  H  2  S    0.593464  -0.884685  -0.311167  -0.485177   0.079059
+
+                      6
+                  164.5426
+                     A   
+    1  H  1  S   -0.792380
+    2  H  1  S    0.379672
+    3  H  1  S   -0.120891
+    4  H  2  S    0.792383
+    5  H  2  S   -0.379673
+    6  H  2  S    0.120892
+ ...... END OF RHF CALCULATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =        0.1 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.5 SECONDS, CPU UTILIZATION IS   9.62%
+
+     ----------------------------------------------------------------
+     PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
+     ----------------------------------------------------------------
+
+          ---------------------------------------
+          MULLIKEN AND LOWDIN POPULATION ANALYSES
+          ---------------------------------------
+
+               ----- POPULATIONS IN EACH AO -----
+                             MULLIKEN      LOWDIN
+              1  H  1  S      0.00035     0.00086
+              2  H  1  S      0.01559     0.05525
+              3  H  1  S      0.98406     0.94389
+              4  H  2  S      0.00035     0.00086
+              5  H  2  S      0.01559     0.05525
+              6  H  2  S      0.98406     0.94389
+
+          ----- MULLIKEN ATOMIC OVERLAP POPULATIONS -----
+          (OFF-DIAGONAL ELEMENTS NEED TO BE MULTIPLIED BY 2)
+
+             1           2
+
+    1    0.7307985
+    2    0.2692015   0.7307985
+
+          TOTAL MULLIKEN AND LOWDIN ATOMIC POPULATIONS
+       ATOM         MULL.POP.    CHARGE          LOW.POP.     CHARGE
+    1 HYDROGEN      1.000000    0.000000         1.000000    0.000000
+    2 HYDROGEN      1.000000    0.000000         1.000000    0.000000
+
+          -------------------------------
+          BOND ORDER AND VALENCE ANALYSIS     BOND ORDER THRESHOLD=0.050
+          -------------------------------
+
+                   BOND                       BOND                       BOND
+  ATOM PAIR DIST  ORDER      ATOM PAIR DIST  ORDER      ATOM PAIR DIST  ORDER
+    1   2  0.740  1.000
+
+                       TOTAL       BONDED        FREE
+      ATOM            VALENCE     VALENCE     VALENCE
+    1 HYDROGEN          1.000       1.000       0.000
+    2 HYDROGEN          1.000       1.000       0.000
+
+          ---------------------
+          ELECTROSTATIC MOMENTS
+          ---------------------
+
+ NUCLEAR CONTRIB. (ATOMIC UNITS)    0.000000    0.000000    0.000000
+ POINT   1           X           Y           Z (BOHR)    CHARGE
+                 0.000000    0.000000    0.699199        0.00 (A.U.)
+         DX          DY          DZ         /D/  (DEBYE)
+     0.000000    0.000000    0.000000    0.000000
+ ...... END OF PROPERTY EVALUATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =        0.1 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.6 SECONDS, CPU UTILIZATION IS   8.47%
+
+     ---------------------------
+     COUPLED CLUSTER CALCULATION
+     ---------------------------
+ CCTYP                        =CCSD    
+ TOTAL NUMBER OF MOS          =     6
+ NUMBER OF OCCUPIED MOS       =     1
+ NUMBER OF FROZEN CORE MOS    =     0
+ NUMBER OF FROZEN VIRTUAL MOS =     0
+ MAXIMUM CC ITERATIONS        =     1
+ MAXIMUM DIIS ITERATIONS      =     3
+ CONVERGENCE CRITERION FOR CC =     7
+ AMPLITUDE ACCURACY THRESHOLD = 0.0E+00
+
+     --------------------------------------------
+     PARTIAL TWO ELECTRON INTEGRAL TRANSFORMATION
+     --------------------------------------------
+
+ NUMBER OF CORE MOLECULAR ORBITALS     =    0
+ NUMBER OF OCCUPIED MOLECULAR ORBITALS =    6
+ TOTAL NUMBER OF MOLECULAR ORBITALS    =    6
+ TOTAL NUMBER OF ATOMIC ORBITALS       =    6
+ THRESHOLD FOR KEEPING TRANSFORMED 2E- INTEGRALS = 1.000E-09
+ AO INTEGRALS WILL BE READ IN FROM DISK...
+
+ PLAN A: REQUIREMENTS FOR FULLY IN-MEMORY TRANSFORMATION:
+ # OF WORDS AVAILABLE =            600000000
+ # OF WORDS NEEDED    =               200950
+
+ CHOOSING IN MEMORY PARTIAL TRANSFORMATION...
+ TOTAL NUMBER OF TRANSFORMED 2E- INTEGRALS KEPT =          226
+ ... END OF INTEGRAL TRANSFORMATION ...
+ STEP CPU TIME =     0.01 TOTAL CPU TIME =        0.1 (    0.0 MIN)
+ TOTAL WALL CLOCK TIME=        0.7 SECONDS, CPU UTILIZATION IS   8.70%
+
+   -----------------------
+   COUPLED-CLUSTER PROGRAM
+   -----------------------
+
+   -------------------------------------------------------
+   P.PIECUCH, S.A.KUCHARSKI, M.WLOCH, K.KOWALSKI, M.MUSIAL
+   -------------------------------------------------------
+
+ *****************************************************************
+ THE FOLLOWING PAPERS SHOULD BE CITED WHEN USING COUPLED-CLUSTER
+ OPTIONS:
+
+ CCTYP = LCCD, CCD, CCSD, CCSD(T)
+ P. PIECUCH, S.A. KUCHARSKI, K. KOWALSKI, AND M. MUSIAL,
+ COMP. PHYS. COMMUN. 149, 71-96 (2002).
+
+ CCTYP = R-CC, CR-CC, CCSD(TQ), CR-CC(Q)
+ P. PIECUCH, S.A. KUCHARSKI, K. KOWALSKI, AND M. MUSIAL,
+ COMP. PHYS. COMMUN. 149, 71-96 (2002);
+ K. KOWALSKI AND P. PIECUCH, J. CHEM. PHYS. 113, 18-35 (2000);
+ K. KOWALSKI AND P. PIECUCH, J. CHEM. PHYS. 113, 5644-5652 (2000).
+
+ CCTYP = EOM-CCSD, CR-EOM
+ P. PIECUCH, S.A. KUCHARSKI, K. KOWALSKI, AND M. MUSIAL,
+ COMP. PHYS. COMMUN. 149, 71-96 (2002);
+ K. KOWALSKI AND P. PIECUCH, J. CHEM. PHYS. 120, 1715-1738 (2004);
+ M. WLOCH, J.R. GOUR, K. KOWALSKI, AND P. PIECUCH,
+ J. CHEM. PHYS. 122, 214107-1 - 214107-15 (2005).
+
+ CCTYP = CR-CCL
+ P. PIECUCH, S.A. KUCHARSKI, K. KOWALSKI, AND M. MUSIAL,
+ COMP. PHYS. COMMUN. 149, 71-96 (2002);
+ P. PIECUCH AND M. WLOCH, J. CHEM. PHYS. 123,
+ 224105-1 - 224105-10 (2005).
+
+ CCTYP = CR-EOML
+ P. PIECUCH, S.A. KUCHARSKI, K. KOWALSKI, AND M. MUSIAL,
+ COMP. PHYS. COMMUN. 149, 71-96 (2002);
+ P. PIECUCH, J. R. GOUR, AND M. WLOCH,
+ INT. J. QUANTUM CHEM. 109, 3268-3304 (2009);
+ K. KOWALSKI AND P. PIECUCH,
+ J. CHEM. PHYS. 120, 1715-1738 (2004).
+
+ IN ADDITION, THE USE OF CCPRP=.TRUE. IN $CCINP AND/OR THE USE
+ OF CCPRPE=.TRUE. IN $EOMINP SHOULD REFERENCE
+
+ M. WLOCH, J.R. GOUR, K. KOWALSKI, AND P. PIECUCH,
+ J. CHEM. PHYS. 122, 214107-1 - 214107-15 (2005).
+ *****************************************************************
+
+
+ THE FOLLOWING CALCULATIONS WILL BE PERFORMED:
+                                                     CCSD   
+
+ THE FOLLOWING ENERGY WILL BE CONSIDERED THE HIGHEST LEVEL:    CCSD   
+ THE AVAILABLE REPLICATED MEMORY IS   600000000 WORDS.
+ CONVERGENCE THRESHOLD:   1.0E-07
+ MAXIMUM NUMBER OF ITERATIONS:    1
+
+ MEMORY TO BE USED IN CC INTEGRAL SORTING IS      100750 WORDS.
+ THE MINIMUM MEMORY TO ACCOMPLISH SORTING IS      100250 WORDS.
+ ##########################################
+ NICO::WE GOT THE 2E INTEGRALS,LETS STOP NOW
+ NICO::ITS GONNA CRASH
+ NICO::BUT DONT WORRY
+ NICO::THATS OK
+ NICO::REALLY, THATS OK
+ ##########################################
+ ddikick.x: application process 0 quit unexpectedly.
+ ddikick.x: Sending kill signal to DDI processes.
+ ddikick.x: Execution terminated due to error(s).
+----- accounting info -----
+Files used on the master node node05 were:
+-rw-rw-r--. 1 nicolas nicolas    1690 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.dat
+-rw-rw-r--. 1 nicolas nicolas    1102 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F05
+-rw-rw-r--. 1 nicolas nicolas  600016 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F08
+-rw-rw-r--. 1 nicolas nicolas  600192 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F09
+-rw-rw-r--. 1 nicolas nicolas 1636000 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F10
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F70
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F71
+-rw-rw-r--. 1 nicolas nicolas   18000 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F72
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F73
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F74
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F75
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F76
+-rw-rw-r--. 1 nicolas nicolas       0 Mar 11 14:38 /home/scratch/PBS_29575.mendeleiev/scr/h2.F77
+Wed Mar 11 14:38:31 CET 2020
+0.158u 0.132s 0:04.73 5.9%	0+0k 0+32io 0pf+0w

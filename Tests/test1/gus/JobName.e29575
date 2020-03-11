@@ -1,0 +1,15 @@
+cp h2.inp /home/scratch/PBS_29575.mendeleiev/scr/h2.F05
+unset echo
+/mnt/nfs/home/common/gamess//ddikick.x /mnt/nfs/home/common/gamess//gamess.nico.x h2 -ddi 1 1 node05:cpus=1:netext=.myri -scr /home/scratch/PBS_29575.mendeleiev/scr
+ DDI Process 0: error code 911
+ ddikick.x: Fatal error detected.
+ The error is most likely to be in the application, so check for
+ input errors, disk space, memory needs, application bugs, etc.
+ ddikick.x will now clean up all processes, and exit...
+unset echo
+ls: No match.
+ls: No match.
+ls: No match.
+mv: cannot stat ‘fort.77’: No such file or directory
+mv: cannot create regular file ‘/moint.txt’: Permission denied
+/home/scratch/PBS_29575.mendeleiev/scr/dipAO.txt: No such file or directory

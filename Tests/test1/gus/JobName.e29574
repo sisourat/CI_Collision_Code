@@ -1,0 +1,31 @@
+/etc/bashrc: line 92: ulimit: stack size: cannot modify limit: Operation not permitted
+cp h2.inp /home/scratch/PBS_29574.mendeleiev/scr/h2.F05
+unset echo
+/mnt/nfs/home/common/gamess//ddikick.x /mnt/nfs/home/common/gamess//gamess.nico.x h2 -ddi 1 1 node02:cpus=1:netext=.myri -scr /home/scratch/PBS_29574.mendeleiev/scr
+ DDI Process 0: error code 911
+ ddikick.x: Fatal error detected.
+ The error is most likely to be in the application, so check for
+ input errors, disk space, memory needs, application bugs, etc.
+ ddikick.x will now clean up all processes, and exit...
+unset echo
+ls: No match.
+ls: No match.
+ls: No match.
+mv: cannot stat ‘fort.77’: No such file or directory
+mv: cannot stat ‘fort.223’: No such file or directory
+head: cannot open ‘orbital1.txt’ for reading: No such file or directory
+head: cannot open ‘orbital2.txt’ for reading: No such file or directory
+cat: HForbenergy.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/hcore_energy.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/hcore_eigenvectors.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/HForbenergy.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/mocoef.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/dipAO.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/AObasis.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/h1eAO.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/overlapAO.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/xyz.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/h1eMO.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/kinMO.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/potMO.txt: No such file or directory
+/home/scratch/PBS_29574.mendeleiev/scr/fort.223: No such file or directory
